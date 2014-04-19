@@ -16,6 +16,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'proxima nova regular';
+    src: url('../../lib/font/mark_simonson_-_proxima_nova_regular-webfont.eot');
+    src: url('../../lib/font/mark_simonson_-_proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../lib/font/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
+         url('../../lib/font/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype'),
+         url('../../lib/font/mark_simonson_-_proxima_nova_regular-webfont.svg') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima nova bold';
+    src: url('../../lib/font/mark_simonson_-_proxima_nova_bold-webfont.eot');
+    src: url('../../lib/font/mark_simonson_-_proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../lib/font/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
+         url('../../lib/font/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype'),
+         url('../../lib/font/mark_simonson_-_proxima_nova_bold-webfont.svg') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 // Override theme settings (see ../template/settings.scss)
@@ -29,3 +53,27 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.title-left {
+	h2 {
+		font-family: 'proxima nova bold'
+	}
+	font-family: 'proxima nova regular';
+	text-align: left;
+	float: left !important;
+}
+
+f {
+	margin-right: 10px;
+	padding: 10px;
+	background: #e74c3c;
+	border-radius: 4px;
+	width: auto;
+	text-align: center;
+}
+
+.column {
+	display: block;
+	float: left;
+	width: 50%;
+}

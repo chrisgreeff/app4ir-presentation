@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
+    <!-- Font Awesome -->
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -41,16 +46,25 @@
     <div class="reveal">
 
         <div class="slides">
-            <section>
-                <h1>QuickIR</h1>
-                <h3>Interact with IRD with ease</h3>
+            <section data-background="./images/intro-small.jpg">
+                <div class="title-left">
+                    <h2>QuickIR</h2>
+                    <h4>Interact with IRD, effortlessly. </h4>
+                </div>
+                
             </section>
 
             <section>
                 <section>
-                    <h2>Meet the Team!</h2>
-                    <h2 class="fragment">Chris Greeff</h2>
-                    <h2 class="fragment">Jacky Lee</h2>
+                    <div class="column">
+                        <h2>Chris</h2>
+                        <h4><f class="fa fa-code">Developer</f></h4>
+                    </div>
+                    <div class="column">
+                        <h2>Jacky</h2>
+                        <h4><f class="fa fa-pencil">Designer</f></h4>
+                    </div>
+                    
                 </section>
 
                 <!-- GIF: Dancing weirdos -->
@@ -517,7 +531,7 @@
         history: true,
         // center: true,
 
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        theme: 'ird', // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Parallax scrolling
