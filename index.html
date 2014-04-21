@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Font Awesome -->
 
@@ -35,6 +36,8 @@
         document.getElementsByTagName('head')[0].appendChild(link);
     }
     </script>
+
+    <script src="js/vendor/jquery-2.1.0.min.js"></script>
 
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -93,7 +96,7 @@
 
                 <section>
                 <div>
-                    <h2 class="button">Solve What?</h2>
+                    <h2>Solve What?</h2>
                 </div>
 
                     <img class="fragment" src="images/IRDGraph.png" style="width: 300px; height: auto;">
@@ -101,7 +104,7 @@
                     <img class="fragment" src="images/pacman_pie_graph.jpg" style="width: 300px; height: auto;">
                     <img class="fragment" src="images/wilson.jpg" style="width: 300px; height: auto;">
 
-                    <aside class="notes">In preparing this presentation, we wondered where to start. I guess what we could do is define the problem by showing you some numbers and statistics, while going through an assortment of arbitrary graphs, while trying to theoretically prove some fundamental issue in your system. But we think we might just end up being like buzz lightyear here [] So instead, we thought we'd start by introducing you to some of our friends. You may have already met them.</aside>
+                    <aside class="notes">In preparing this presentation, we wondered where to start. I guess what we could do is define the problem by showing you some numbers and statistics, while going through an assortment of arbitrary graphs, while trying to theoretically prove some fundamental issue in your system. But we think we might just end up being like buzz lightyear here * So instead, we thought we'd start by introducing you to some of our friends. You may have already met them.</aside>
                 </section>
 
                  <section data-background="./images/impress03.gif" data-transition="slide">
@@ -110,31 +113,24 @@
                  </div>
                  </section>
 
-                <section>
-                    <h2>Introducing...</h2>
+                <section data-state="meet-friends">
+                    <h2>Say hi to</h2>
 
-                    <img src="images/fred.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
-                    <img src="images/jane.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
-                    <img src="images/mike.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
-                    <span class="fragment">Fred</span>
-                    <span class="fragment">Jane</span>
-                    <span class="fragment">Mike</span>
-
+                    <img class="meet-friends" src="images/group-photo.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none; text-align: center;">
                     <aside class="notes">Meet Fred, Jane and Mike</aside>
                 </section>
 
                 <section>
                     <h2>Fred</h2>
 
-                    <img src="images/fred.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
-
+                    <img src="images/fred.svg" style="width: auto; height: 500px; border: none; background: none; box-shadow: none;">
                     <aside class="notes">Fred is not the greatest expert when it comes to IRD and Tax, in fact it's safe to say he knows nothing about IRD. However Fred has a dream. And that dream is to start his own Taco Truck business. Delivering Tacos to all 4 corners of the Wellington CBD.</aside>
                 </section>
 
                 <section>
                     <h2>Jane</h2>
 
-                    <img src="images/jane.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                    <img src="images/jane.svg" style="width: auto; height: 500px; border: none; background: none; box-shadow: none;">
 
                     <aside class="notes">Jane is a little more well versed with IRD and Tax as she owns and operates her own cookie bar. People think she is antisocial, but it's not because she's shy, it's just she believes everyone has been after her secret recipes, so she's developed some trust issues, and believes security is the most important aspect of her business</aside>
                 </section>
@@ -142,7 +138,7 @@
                 <section>
                     <h2>Fred</h2>
 
-                    <img src="images/mike.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                    <img src="images/mike.svg" style="width: auto; height: 500px; border: none; background: none; box-shadow: none;">
 
                     <aside class="notes">And finally Mike. Mike owns a hairspray business with 4 employees under him. He has had dealings with the IRD often, and loves to be involved with everything. However Mike is not the most organized guy you've ever met.</aside>
                 </section>
@@ -377,6 +373,14 @@
                 return !!document.body.classList;
             }
         }]
+    });
+
+    Reveal.addEventListener('meet-friends', function (event) {
+        var meetFriendsNode = $(event.srcElement).find('.meet-friends');
+
+        setTimeout(function () {
+            meetFriendsNode.addClass('animated tada');
+        }, 500);
     });
     </script>
 
