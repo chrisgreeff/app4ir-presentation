@@ -301,3 +301,329 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: darkblue; }
+
+/*********************************************
+ * IPHONE FLOWCHART ANIMATION
+ *********************************************/
+.pres-iphone {
+  background: url("../../../images/app/iphone5s.png");
+  background-position: center;
+  width: 287px;
+  height: 600px;
+  background-size: 287px 600px;
+  display: inline-block;
+  position: relative; }
+
+.pres-overlay {
+  position: absolute;
+  left: 28px;
+  top: 93px;
+  height: 405px;
+  width: 223px; }
+
+.pres-full-screen, .pres1, .pres2, .pres3, .pres4, .pres5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 405px;
+  width: 230px; }
+
+.pres1 {
+  background: url("../../../images/app/IR595-1.png");
+  background-size: 230px 405px; }
+
+.pres2 {
+  background: url("../../../images/app/IR595-2.png");
+  background-size: 230px 405px; }
+
+.pres3 {
+  background: url("../../../images/app/IR595-3.png");
+  background-size: 230px 405px; }
+
+.pres4 {
+  background: url("../../../images/app/IR595-4.png");
+  background-size: 230px 405px; }
+
+.pres5 {
+  background: url("../../../images/app/IR595-5.png");
+  background-size: 230px 405px; }
+
+@-webkit-keyframes linearFlow1 {
+  0% {
+    opacity: 1;
+    left: 0; }
+
+  20% {
+    opacity: 0.6;
+    left: -250px; }
+
+  40% {
+    opacity: 0;
+    left: -480px; }
+
+  60% {
+    opacity: 0;
+    left: 480px; }
+
+  80% {
+    opacity: 0.6;
+    left: 250px; }
+
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+@keyframes linearFlow1 {
+  0% {
+    opacity: 1;
+    left: 0; }
+
+  20% {
+    opacity: 0.6;
+    left: -250px; }
+
+  40% {
+    opacity: 0;
+    left: -480px; }
+
+  60% {
+    opacity: 0;
+    left: 480px; }
+
+  80% {
+    opacity: 0.6;
+    left: 250px; }
+
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+.pres-flow1 {
+  -webkit-animation: linearFlow1 8s infinite;
+  -moz-animation: linearFlow1 8s infinite;
+  -o-animation: linearFlow1 8s infinite;
+  animation: linearFlow1 8s infinite; }
+
+@-webkit-keyframes linearFlow2 {
+  0% {
+    opacity: 0.6;
+    left: -250px; }
+
+  20% {
+    opacity: 0;
+    left: -480px; }
+
+  40% {
+    opacity: 0;
+    left: 480px; }
+
+  60% {
+    opacity: 0.6;
+    left: 250px; }
+
+  80% {
+    opacity: 1;
+    left: 0; }
+
+  100% {
+    opacity: 0.6;
+    left: -250px; } }
+
+@keyframes linearFlow2 {
+  0% {
+    opacity: 0.6;
+    left: -250px; }
+
+  20% {
+    opacity: 0;
+    left: -480px; }
+
+  40% {
+    opacity: 0;
+    left: 480px; }
+
+  60% {
+    opacity: 0.6;
+    left: 250px; }
+
+  80% {
+    opacity: 1;
+    left: 0; }
+
+  100% {
+    opacity: 0.6;
+    left: -250px; } }
+
+.pres-flow2 {
+  -webkit-animation: linearFlow2 8s infinite;
+  -moz-animation: linearFlow2 8s infinite;
+  -o-animation: linearFlow2 8s infinite;
+  animation: linearFlow2 8s infinite; }
+
+@-webkit-keyframes linearFlow3 {
+  0% {
+    opacity: 0;
+    left: -480px; }
+
+  20% {
+    opacity: 0;
+    left: 480px; }
+
+  40% {
+    opacity: 0.6;
+    left: 250px; }
+
+  60% {
+    opacity: 1;
+    left: 0; }
+
+  80% {
+    opacity: 0.6;
+    left: -250px; }
+
+  100% {
+    opacity: 0;
+    left: -480px; } }
+
+@keyframes linearFlow3 {
+  0% {
+    opacity: 0;
+    left: -480px; }
+
+  20% {
+    opacity: 0;
+    left: 480px; }
+
+  40% {
+    opacity: 0.6;
+    left: 250px; }
+
+  60% {
+    opacity: 1;
+    left: 0; }
+
+  80% {
+    opacity: 0.6;
+    left: -250px; }
+
+  100% {
+    opacity: 0;
+    left: -480px; } }
+
+.pres-flow3 {
+  -webkit-animation: linearFlow3 8s infinite;
+  -moz-animation: linearFlow3 8s infinite;
+  -o-animation: linearFlow3 8s infinite;
+  animation: linearFlow3 8s infinite; }
+
+@-webkit-keyframes linearFlow4 {
+  0% {
+    opacity: 0;
+    left: 480px; }
+
+  20% {
+    opacity: 0.6;
+    left: 250px; }
+
+  40% {
+    opacity: 1;
+    left: 0; }
+
+  60% {
+    opacity: 0.6;
+    left: -250px; }
+
+  80% {
+    opacity: 0;
+    left: -480px; }
+
+  100% {
+    opacity: 0;
+    left: 480px; } }
+
+@keyframes linearFlow4 {
+  0% {
+    opacity: 0;
+    left: 480px; }
+
+  20% {
+    opacity: 0.6;
+    left: 250px; }
+
+  40% {
+    opacity: 1;
+    left: 0; }
+
+  60% {
+    opacity: 0.6;
+    left: -250px; }
+
+  80% {
+    opacity: 0;
+    left: -480px; }
+
+  100% {
+    opacity: 0;
+    left: 480px; } }
+
+.pres-flow4 {
+  -webkit-animation: linearFlow4 8s infinite;
+  -moz-animation: linearFlow4 8s infinite;
+  -o-animation: linearFlow4 8s infinite;
+  animation: linearFlow4 8s infinite; }
+
+@-webkit-keyframes linearFlow5 {
+  0% {
+    opacity: 0.6;
+    left: 250px; }
+
+  20% {
+    opacity: 1;
+    left: 0; }
+
+  40% {
+    opacity: 0.6;
+    left: -250px; }
+
+  60% {
+    opacity: 0;
+    left: -480px; }
+
+  80% {
+    opacity: 0;
+    left: 480px; }
+
+  100% {
+    opacity: 0.6;
+    left: 250px; } }
+
+@keyframes linearFlow5 {
+  0% {
+    opacity: 0.6;
+    left: 250px; }
+
+  20% {
+    opacity: 1;
+    left: 0; }
+
+  40% {
+    opacity: 0.6;
+    left: -250px; }
+
+  60% {
+    opacity: 0;
+    left: -480px; }
+
+  80% {
+    opacity: 0;
+    left: 480px; }
+
+  100% {
+    opacity: 0.6;
+    left: 250px; } }
+
+.pres-flow5 {
+  -webkit-animation: linearFlow5 8s infinite;
+  -moz-animation: linearFlow5 8s infinite;
+  -o-animation: linearFlow5 8s infinite;
+  animation: linearFlow5 8s infinite; }
