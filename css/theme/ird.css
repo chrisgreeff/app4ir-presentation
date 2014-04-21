@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
 /**
  * Default theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
 @font-face {
   font-family: 'League Gothic';
   src: url("../../lib/font/league_gothic-webfont.eot");
@@ -205,6 +205,29 @@ body {
   padding: 20px !important; }
   .subhead h4 {
     margin: 0 !important; }
+
+.map {
+  display: inline-block;
+  height: 600px;
+  position: absolute;
+  left: 300px; }
+
+.blur-in {
+  -webkit-filter: blur(10px); }
+
+.sidelist {
+  position: absolute;
+  top: 200px; }
+
+.thumb {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  top: -100px;
+  margin: 40px !important; }
+
+.grayscale {
+  -webkit-filter: grayscale(100%); }
 
 /*********************************************
  * HEADERS

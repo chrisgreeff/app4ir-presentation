@@ -136,6 +136,35 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	padding: 20px !important;
 }
 
+.map {
+	display: inline-block;
+	height: 600px;
+	position: absolute;
+	left: 300px;
+}
+
+.blur-in {
+	-webkit-filter: blur(10px);
+}
+
+.sidelist {
+	position: absolute;
+	top: 200px;
+}
+
+.thumb {
+	display: inline-block;
+	width: 200px;
+	position: relative;
+	top: -100px;
+	margin: 40px !important;
+}
+
+.grayscale {
+	-webkit-filter: grayscale(100%);
+}
+
+
 /*********************************************
  * HEADERS
  *********************************************/
