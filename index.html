@@ -38,6 +38,7 @@
     </script>
 
     <script src="js/vendor/jquery-2.1.0.min.js"></script>
+    <script src="js/vendor/Chart.min.js"></script>
 
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -101,11 +102,83 @@
                     <div>
                         <h2>Solve What?</h2>
                     </div>
+                    <div class="chart">
+                        <canvas class="fragment" id="canvas1" height="250" width="250"></canvas>
+                        <canvas class="fragment" id="canvas2" height="250" width="250"></canvas>
+                        <canvas class="fragment" id="canvas3" height="250" width="250"></canvas>
+                    </div>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 30,
+                                    color:"#F7464A"
+                                },
+                                {
+                                    value : 50,
+                                    color : "#46BFBD"
+                                },
+                                {
+                                    value : 100,
+                                    color : "#FDB45C"
+                                },
+                                {
+                                    value : 40,
+                                    color : "#949FB1"
+                                },
+                                {
+                                    value : 120,
+                                    color : "#4D5360"
+                                }
+                            
+                            ];
 
-                    <img class="fragment" src="images/general/IRDGraph.png" style="width: 300px; height: auto;">
-                    <img class="fragment" src="images/general/emcsquared.jpg" style="width: 300px; height: auto;">
-                    <img class="fragment" src="images/general/pacman_pie_graph.jpg" style="width: 300px; height: auto;">
-                    <img class="fragment" src="images/general/wilson.jpg" style="width: 300px; height: auto;">
+                        var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
+                       
+                        var lineChartData = {
+                            labels : ["January","February","March","April","May","June","July"],
+                            datasets : [
+                                {
+                                    fillColor : "rgba(220,220,220,0.5)",
+                                    strokeColor : "rgba(220,220,220,1)",
+                                    pointColor : "rgba(220,220,220,1)",
+                                    pointStrokeColor : "#fff",
+                                    data : [65,59,90,81,56,55,40]
+                                },
+                                {
+                                    fillColor : "rgba(151,187,205,0.5)",
+                                    strokeColor : "rgba(151,187,205,1)",
+                                    pointColor : "rgba(151,187,205,1)",
+                                    pointStrokeColor : "#fff",
+                                    data : [28,48,40,19,96,27,100]
+                                }
+                            ]
+                        }
+
+                        var myLine = new Chart(document.getElementById("canvas2").getContext("2d")).Line(lineChartData);
+
+                        var radarChartData = {
+                            labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+                            datasets : [
+                                {
+                                    fillColor : "rgba(220,220,220,0.5)",
+                                    strokeColor : "rgba(220,220,220,1)",
+                                    pointColor : "rgba(220,220,220,1)",
+                                    pointStrokeColor : "#fff",
+                                    data : [65,59,90,81,56,55,40]
+                                },
+                                {
+                                    fillColor : "rgba(151,187,205,0.5)",
+                                    strokeColor : "rgba(151,187,205,1)",
+                                    pointColor : "rgba(151,187,205,1)",
+                                    pointStrokeColor : "#fff",
+                                    data : [28,48,40,19,96,27,100]
+                                }
+                            ]
+                            
+                        }
+
+    var myRadar = new Chart(document.getElementById("canvas3").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
+                    </script>
 
                     <aside class="notes">In preparing this presentation, we wondered where to start. I guess what we could do is define the problem by showing you some numbers and statistics, while going through an assortment of arbitrary graphs, while trying to theoretically prove some fundamental issue in your system. But we think we might just end up being like buzz lightyear here * So instead, we thought we'd start by introducing you to some of our friends. You may have already met them.</aside>
                 </section>
