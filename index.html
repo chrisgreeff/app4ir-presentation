@@ -393,7 +393,17 @@
                     <aside class="notes">Now what was important for us to focus on, was not designing an app for 1 specific user type. For instance this caters very well to the Freds who have very little experience with IRD, but not particularly with the Jane's and Mike's. They, being more well versed with IRD, do not need to go through the initial steps in order to figure out what they are trying to do. They already know. So we had to think of a way to cater to both ends of the spectrum. This is where the Quick Search idea came from</aside>
                 </section>
 
-                <section>
+                <section class="quick-search-section">
+                    <div class="pres-iphone">
+                        <div class="pres-overlay pres-overlay-hidden">
+                            <div class="pres7"></div>
+                            <div class="pres7-menu-bar"></div>
+                            <div class="pres-header"></div>
+                            <div class="pres-gesture"></div>
+                        </div>
+                    </div>
+
+                    <span class="quick-search-animation fragment"></span>
 
                     <aside class="notes">Quick Search basically allows the user to jump to a particular section in the flowchart. We call these "hot spots". Areas of the application that we know are key areas in which a user has to begin to have properly completed a specific task. The way in which we made these "hot spots" is by having a search bar available in the dashboard, the user can quickly type the application name or keywords to get around the app too. In addition we could build a 'popular tasks' section which will auto update based user interaction, or time of the year.</aside>
                 </section>
@@ -503,9 +513,15 @@
         }
 
         if (fragmentNode.hasClass('quick-help-animation')) {
-            sectionNode = fragmentNode.parent('.quick-help-section')
+            sectionNode = fragmentNode.parent('.quick-help-section');
             sectionNode.find('.pres6').addClass('pres-help');
             sectionNode.find('.pres-gesture').addClass('pres-gesture-help');
+        }
+
+        if (fragmentNode.hasClass('quick-search-animation')) {
+            sectionNode = fragmentNode.parent('.quick-search-section');
+            sectionNode.find('.pres7').addClass('pres-quick-search');
+            sectionNode.find('.pres-gesture').addClass('pres-gesture-quick-search');
         }
     });
 

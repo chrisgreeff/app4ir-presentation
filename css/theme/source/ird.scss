@@ -384,6 +384,25 @@ $selectionColor: #fff;
     height: 31px;
 }
 
+.pres7 {
+    @extend .pres-full-screen;
+    background: url("../../../images/app/searchlong.png");
+    background-size: 223px auto;
+    width: 223px;
+    height: 1000px;
+    top: -289px;
+}
+
+.pres7-menu-bar {
+    @extend .pres-default;
+    background: url("../../../images/app/menu-bar-top-home.png");
+    background-size: 226px auto;
+    width: 225px;
+    top: 11px;
+    height: 34px;
+    left: -2px;
+}
+
 .pres-header {
     @extend .pres-default;
     background: url("../../../images/app/fixed-top-header.png");
@@ -584,4 +603,47 @@ $selectionColor: #fff;
 
     -webkit-animation: helpGestureToggle 1.5s ease;
     animation:         helpGestureToggle 1.5s ease;
+}
+
+@-webkit-keyframes quickSearch {
+    0%  { top: -289px }
+    10% { top: -289px }
+    90% { top: 0; }
+}
+@keyframes quickSearch {
+    10% { top: -289px }
+    90% { top: 0; }
+}
+
+.pres-quick-search {
+    top: 0;
+
+    -webkit-animation: quickSearch 1.5s ease;
+    animation:         quickSearch 1.5s ease;
+}
+
+@-webkit-keyframes quickSearchGesture {
+    0%   { opacity: 0; }
+    10%  { opacity: 0.8; }
+    30%  { opacity: 0; }
+}
+@keyframes quickSearchGesture {
+    0%   { opacity: 0; }
+    10%  { opacity: 0.8; }
+    30%  { opacity: 0; }
+}
+
+.pres-gesture-quick-search {
+    right: 6px;
+    top: 16px;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0;
+
+    -webkit-animation: quickSearchGesture 1.5s ease;
+    animation:         quickSearchGesture 1.5s ease;
 }
