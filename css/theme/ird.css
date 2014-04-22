@@ -485,8 +485,6 @@ body {
 
 .pres-flow1 {
   -webkit-animation: linearFlow1 8s infinite;
-  -moz-animation: linearFlow1 8s infinite;
-  -o-animation: linearFlow1 8s infinite;
   animation: linearFlow1 8s infinite; }
 
 @-webkit-keyframes linearFlow2 {
@@ -541,8 +539,6 @@ body {
 
 .pres-flow2 {
   -webkit-animation: linearFlow2 8s infinite;
-  -moz-animation: linearFlow2 8s infinite;
-  -o-animation: linearFlow2 8s infinite;
   animation: linearFlow2 8s infinite; }
 
 @-webkit-keyframes linearFlow3 {
@@ -597,8 +593,6 @@ body {
 
 .pres-flow3 {
   -webkit-animation: linearFlow3 8s infinite;
-  -moz-animation: linearFlow3 8s infinite;
-  -o-animation: linearFlow3 8s infinite;
   animation: linearFlow3 8s infinite; }
 
 @-webkit-keyframes linearFlow4 {
@@ -653,8 +647,6 @@ body {
 
 .pres-flow4 {
   -webkit-animation: linearFlow4 8s infinite;
-  -moz-animation: linearFlow4 8s infinite;
-  -o-animation: linearFlow4 8s infinite;
   animation: linearFlow4 8s infinite; }
 
 @-webkit-keyframes linearFlow5 {
@@ -709,53 +701,38 @@ body {
 
 .pres-flow5 {
   -webkit-animation: linearFlow5 8s infinite;
-  -moz-animation: linearFlow5 8s infinite;
-  -o-animation: linearFlow5 8s infinite;
   animation: linearFlow5 8s infinite; }
 
 @-webkit-keyframes helpToggle {
+  0% {
+    top: 0; }
+
   10% {
     top: 0; }
 
-  35% {
-    top: -290px; }
+  65% {
+    top: -300px; }
 
-  45% {
-    top: -260px; }
-
-  55% {
-    top: -260px; }
-
-  80% {
-    top: 40px; }
-
-  95% {
-    top: 0; } }
+  100% {
+    top: -260px; } }
 
 @keyframes helpToggle {
+  0% {
+    top: 0; }
+
   10% {
     top: 0; }
 
-  35% {
-    top: -290px; }
+  65% {
+    top: -300px; }
 
-  45% {
-    top: -260px; }
-
-  55% {
-    top: -260px; }
-
-  80% {
-    top: 40px; }
-
-  95% {
-    top: 0; } }
+  100% {
+    top: -260px; } }
 
 .pres-help {
-  -webkit-animation: helpToggle 3s infinite;
-  -moz-animation: helpToggle 3s infinite;
-  -o-animation: helpToggle 3s infinite;
-  animation: helpToggle 3s infinite; }
+  -webkit-animation: helpToggle 1.5s ease;
+  animation: helpToggle 1.5s ease;
+  top: -260px; }
 
 @-webkit-keyframes helpGestureToggle {
   0% {
@@ -764,23 +741,11 @@ body {
   10% {
     top: 190px; }
 
-  20% {
-    opacity: 0.8; }
-
   40% {
-    top: 60px;
-    opacity: 0; }
-
-  45% {
-    top: 100px;
-    opacity: 0; }
-
-  60% {
-    top: 100px;
     opacity: 0.8; }
 
-  90% {
-    top: 190px;
+  80% {
+    top: 60px;
     opacity: 0; } }
 
 @keyframes helpGestureToggle {
@@ -790,23 +755,11 @@ body {
   10% {
     top: 190px; }
 
-  20% {
-    opacity: 0.8; }
-
   40% {
-    top: 60px;
-    opacity: 0; }
-
-  45% {
-    top: 100px;
-    opacity: 0; }
-
-  60% {
-    top: 100px;
     opacity: 0.8; }
 
-  90% {
-    top: 190px;
+  80% {
+    top: 60px;
     opacity: 0; } }
 
 .pres-gesture-help {
@@ -818,7 +771,5 @@ body {
   height: 20px;
   border-radius: 50%;
   opacity: 0;
-  -webkit-animation: helpGestureToggle 3s infinite;
-  -moz-animation: helpGestureToggle 3s infinite;
-  -o-animation: helpGestureToggle 3s infinite;
-  animation: helpGestureToggle 3s infinite; }
+  -webkit-animation: helpGestureToggle 1.5s ease;
+  animation: helpGestureToggle 1.5s ease; }

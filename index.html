@@ -364,10 +364,10 @@
                     <aside class="notes">Finally, while we were exploring the flowchart structure, we noticed that it was very easy to link up specific help information to a particular section the user was currently on. So we tried thinking of a way we could tie this information into the general flow of the app.</aside>
                 </section>
 
-                <section>
+                <section class="quick-help-section">
                     <div class="pres-iphone">
                         <div class="pres-overlay pres-overlay-hidden">
-                            <div class="pres6 pres-help"></div>
+                            <div class="pres6"></div>
                             <div class="pres6-before-start"></div>
                             <div class="pres-options-table pres-options-bar">
                                 <div class="pres-options-cell pres-options-yes">
@@ -379,9 +379,10 @@
                             </div>
                             <div class="pres6-menu-bar"></div>
                             <div class="pres-header"></div>
-                            <div class="pres-gesture-help"></div>
+                            <div class="pres-gesture"></div>
                         </div>
                     </div>
+                    <span class="quick-help-animation fragment"></span>
 
                     <aside class="notes">And so Swipe For Help was born. At every step of the way, additional information that is specific to the question in context is at the users fingertips. Literally.</aside>
                 </section>
@@ -491,28 +492,29 @@
 
     Reveal.addEventListener('fragmentshown', function(event) {
         var fragmentNode = $(event.fragment),
-            zoomNode;
+            sectionNode;
 
         if (fragmentNode.hasClass('common')) {
             fragmentNode.parent('.demographic').find('.map').addClass('blur-in');
+        }
+
+        if (fragmentNode.hasClass('frustrated')) {
+            fragmentNode.parent('.demographic').find('.thumb').addClass('grayscale').removeClass('tada');
+        }
+
+        if (fragmentNode.hasClass('quick-help-animation')) {
+            sectionNode = fragmentNode.parent('.quick-help-section')
+            sectionNode.find('.pres6').addClass('pres-help');
+            sectionNode.find('.pres-gesture').addClass('pres-gesture-help');
         }
     });
 
     Reveal.addEventListener('fragmenthidden', function(event) {
         var fragmentNode = $(event.fragment),
-            zoomNode;
+            actionNode;
 
         if (fragmentNode.hasClass('common')) {
             fragmentNode.parent('.demographic').find('.map').removeClass('blur-in');
-        }
-    });
-
-    Reveal.addEventListener('fragmentshown', function(event) {
-        var fragmentNode = $(event.fragment),
-            zoomNode;
-
-        if (fragmentNode.hasClass('frustrated')) {
-            fragmentNode.parent('.demographic').find('.thumb').addClass('grayscale').removeClass('tada');
         }
     });
     </script>
