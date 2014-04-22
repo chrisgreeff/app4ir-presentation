@@ -1,9 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
 /**
  * Default theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
 @font-face {
   font-family: 'League Gothic';
   src: url("../../lib/font/league_gothic-webfont.eot");
@@ -380,7 +380,7 @@ body {
   background: url("../../../images/app/quick-help.png");
   background-size: 230px auto;
   width: 223px;
-  height: 405px; }
+  height: 1000px; }
 
 .pres6-menu-bar {
   background: url("../../../images/app/menu-bar-top.png");
@@ -712,3 +712,113 @@ body {
   -moz-animation: linearFlow5 8s infinite;
   -o-animation: linearFlow5 8s infinite;
   animation: linearFlow5 8s infinite; }
+
+@-webkit-keyframes helpToggle {
+  10% {
+    top: 0; }
+
+  35% {
+    top: -290px; }
+
+  45% {
+    top: -260px; }
+
+  55% {
+    top: -260px; }
+
+  80% {
+    top: 40px; }
+
+  95% {
+    top: 0; } }
+
+@keyframes helpToggle {
+  10% {
+    top: 0; }
+
+  35% {
+    top: -290px; }
+
+  45% {
+    top: -260px; }
+
+  55% {
+    top: -260px; }
+
+  80% {
+    top: 40px; }
+
+  95% {
+    top: 0; } }
+
+.pres-help {
+  -webkit-animation: helpToggle 3s infinite;
+  -moz-animation: helpToggle 3s infinite;
+  -o-animation: helpToggle 3s infinite;
+  animation: helpToggle 3s infinite; }
+
+@-webkit-keyframes helpGestureToggle {
+  0% {
+    opacity: 0; }
+
+  10% {
+    top: 190px; }
+
+  20% {
+    opacity: 0.8; }
+
+  40% {
+    top: 60px;
+    opacity: 0; }
+
+  45% {
+    top: 100px;
+    opacity: 0; }
+
+  60% {
+    top: 100px;
+    opacity: 0.8; }
+
+  90% {
+    top: 190px;
+    opacity: 0; } }
+
+@keyframes helpGestureToggle {
+  0% {
+    opacity: 0; }
+
+  10% {
+    top: 190px; }
+
+  20% {
+    opacity: 0.8; }
+
+  40% {
+    top: 60px;
+    opacity: 0; }
+
+  45% {
+    top: 100px;
+    opacity: 0; }
+
+  60% {
+    top: 100px;
+    opacity: 0.8; }
+
+  90% {
+    top: 190px;
+    opacity: 0; } }
+
+.pres-gesture-help {
+  left: 105px;
+  position: absolute;
+  display: inline-block;
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: helpGestureToggle 3s infinite;
+  -moz-animation: helpGestureToggle 3s infinite;
+  -o-animation: helpGestureToggle 3s infinite;
+  animation: helpGestureToggle 3s infinite; }
