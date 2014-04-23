@@ -223,7 +223,7 @@
                     <img class="fragment animated infinite tada thumb" src="images/friends/head-fred.svg" alt="">
                     <img class="fragment animated infinite tada thumb" src="images/friends/head-jane.svg" alt="">
                     <img class="fragment animated infinite tada thumb" src="images/friends/head-mike.svg" alt="">
-                    <h1 class="fragment common frustrated animated swing" style="z-index: 10; font-weight: 800; color: #f4575f; position: relative; top: -100px;"> FRUSTRATED</h1>
+                    <h1 class="fragment common frustrated animated swing" style="z-index: 10; font-weight: 800; color: #f4575f; position: relative; top: -100px;">FRUSTRATED</h1>
 
                     <aside class="notes">Now of course this is not an accurate representation of every demographic in New Zealand, but for the sake of this presentation, these guys are going to be their representatives. While they have varying levels of expertise in IRD and business, one thing we can be pretty certain they all have in common is, they aren't huge fans of IRD. Here are some of the main reasons why.</aside>
                 </section>
@@ -364,7 +364,7 @@
                     <aside class="notes">Finally, while we were exploring the flowchart structure, we noticed that it was very easy to link up specific help information to a particular section the user was currently on. So we tried thinking of a way we could tie this information into the general flow of the app.</aside>
                 </section>
 
-                <section>
+                <section class="quick-help-section">
                     <div class="pres-iphone">
                         <div class="pres-overlay pres-overlay-hidden">
                             <div class="pres6"></div>
@@ -379,11 +379,12 @@
                             </div>
                             <div class="pres6-menu-bar"></div>
                             <div class="pres-header"></div>
-                            <div class="pres-gesture-help"></div>
+                            <div class="pres-gesture"></div>
                         </div>
                     </div>
+                    <span class="quick-help-animation fragment"></span>
 
-                    <aside class="notes"> And so Swipe For Help was born. At every step of the way, additional information that is specific to the question in context is at the users fingertips. Literally.</aside>
+                    <aside class="notes">And so Swipe For Help was born. At every step of the way, additional information that is specific to the question in context is at the users fingertips. Literally.</aside>
                 </section>
 
                 <section>
@@ -392,7 +393,17 @@
                     <aside class="notes">Now what was important for us to focus on, was not designing an app for 1 specific user type. For instance this caters very well to the Freds who have very little experience with IRD, but not particularly with the Jane's and Mike's. They, being more well versed with IRD, do not need to go through the initial steps in order to figure out what they are trying to do. They already know. So we had to think of a way to cater to both ends of the spectrum. This is where the Quick Search idea came from</aside>
                 </section>
 
-                <section>
+                <section class="quick-search-section">
+                    <div class="pres-iphone">
+                        <div class="pres-overlay pres-overlay-hidden">
+                            <div class="pres7"></div>
+                            <div class="pres7-menu-bar"></div>
+                            <div class="pres-header"></div>
+                            <div class="pres-gesture"></div>
+                        </div>
+                    </div>
+
+                    <span class="quick-search-animation fragment"></span>
 
                     <aside class="notes">Quick Search basically allows the user to jump to a particular section in the flowchart. We call these "hot spots". Areas of the application that we know are key areas in which a user has to begin to have properly completed a specific task. The way in which we made these "hot spots" is by having a search bar available in the dashboard, the user can quickly type the application name or keywords to get around the app too. In addition we could build a 'popular tasks' section which will auto update based user interaction, or time of the year.</aside>
                 </section>
@@ -489,30 +500,37 @@
         }, 500);
     });
 
-    Reveal.addEventListener('fragmentshown', function (event) {
+    Reveal.addEventListener('fragmentshown', function(event) {
         var fragmentNode = $(event.fragment),
-            zoomNode;
+            sectionNode;
 
         if (fragmentNode.hasClass('common')) {
             fragmentNode.parent('.demographic').find('.map').addClass('blur-in');
         }
-    });
-
-    Reveal.addEventListener('fragmenthidden', function (event) {
-        var fragmentNode = $(event.fragment),
-            zoomNode;
-
-        if (fragmentNode.hasClass('common')) {
-            fragmentNode.parent('.demographic').find('.map').removeClass('blur-in');
-        }
-    });
-
-        Reveal.addEventListener('fragmentshown', function (event) {
-        var fragmentNode = $(event.fragment),
-            zoomNode;
 
         if (fragmentNode.hasClass('frustrated')) {
             fragmentNode.parent('.demographic').find('.thumb').addClass('grayscale').removeClass('tada');
+        }
+
+        if (fragmentNode.hasClass('quick-help-animation')) {
+            sectionNode = fragmentNode.parent('.quick-help-section');
+            sectionNode.find('.pres6').addClass('pres-help');
+            sectionNode.find('.pres-gesture').addClass('pres-gesture-help');
+        }
+
+        if (fragmentNode.hasClass('quick-search-animation')) {
+            sectionNode = fragmentNode.parent('.quick-search-section');
+            sectionNode.find('.pres7').addClass('pres-quick-search');
+            sectionNode.find('.pres-gesture').addClass('pres-gesture-quick-search');
+        }
+    });
+
+    Reveal.addEventListener('fragmenthidden', function(event) {
+        var fragmentNode = $(event.fragment),
+            actionNode;
+
+        if (fragmentNode.hasClass('common')) {
+            fragmentNode.parent('.demographic').find('.map').removeClass('blur-in');
         }
     });
     </script>
