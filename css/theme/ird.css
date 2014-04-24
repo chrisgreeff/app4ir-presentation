@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
 /**
  * Default theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800);
 @font-face {
   font-family: 'League Gothic';
   src: url("../../lib/font/league_gothic-webfont.eot");
@@ -192,6 +192,17 @@ body {
   padding: 10px 30px !important;
   color: #f1f0ee !important; }
 
+.button-clear {
+  display: block;
+  width: 400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 5px;
+  color: #f1f0ee;
+  background: #1abc9c;
+  padding: 30px 30px !important;
+  color: #f1f0ee !important; }
+
 .bottom-padding {
   padding-bottom: 30px !important; }
 
@@ -231,6 +242,24 @@ body {
 
 .drop-shadow {
   box-shadow: 3px 3px 8px #000; }
+
+.clipped {
+  position: relative;
+  top: 100px;
+  -webkit-transform: scale(2, 2);
+  -webkit-clip-path: rectangle(20px, 4px, 526px, 68px) !important; }
+
+.clipped-2 {
+  position: relative;
+  top: 100px;
+  -webkit-transform: scale(2, 2);
+  -webkit-clip-path: rectangle(20px, 4px, 526px, 160px) !important; }
+
+.clipped-3 {
+  position: relative;
+  top: 100px;
+  -webkit-transform: scale(1.5, 1.5) translatey(-50px) !important;
+  -webkit-clip-path: rectangle(20px, 4px, 526px, 500px) !important; }
 
 /*********************************************
  * HEADERS

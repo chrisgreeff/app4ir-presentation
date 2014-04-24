@@ -242,7 +242,7 @@
                     <aside class="notes">For someone like Fred, doing something as simple as applying for an IRD number on the Inland Revenue Website is a challenging task.</aside>
                 </section>
 
-                <section data-background="/images/general/subway-lines02.png" data-transition="zoom">
+                <section data-background="/images/general/subway-line.png" data-transition="zoom">
                     <img class="drop-shadow" src="images/friends/fred-confused.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
 
                     <aside class="notes">While there is huge amount of information on the website, it's often disconnected to the context Fred was currently in, making it difficult for him to find the information, forms and documents that were being referred to. Causing immense confusion.</aside>
@@ -272,13 +272,15 @@
                     <aside class="notes">Constantly juggling multiple IRD applications at the same time, anyone would find it challenging to know what application forms they need to fill out, and by when. Sometimes this results him missing important due dates and getting a penalty.</aside>
                 </section>
 
-                <section data-transition="slide">
-                <h2>Issues identified</h2>
+                <section data-transition="fade">
+                <h2>Issues Identified</h2>
                     <h4 class="fragment button">Navigation</h4>
                     <h4 class="fragment button">Verification</h4>
                     <h4 class="fragment button">Communication</h4>
 
-                    <img class="fragment" src="images/app/introducing-easyir.png" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                    <aside class="notes">We have identified these issues as "Navigation", "Verification", and "Communication". And we believe we have addressed these issues with our App [Insert name here] IR</aside>
+                </section>
+                <section data-transition="slide" data-background="/images/general/perspectivescreens.jpg">
 
                     <aside class="notes">We have identified these issues as "Navigation", "Verification", and "Communication". And we believe we have addressed these issues with our App [Insert name here] IR</aside>
                 </section>
@@ -291,7 +293,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
                 <section>
-                    <h2>Navigation</h2>
+                    <h2 class="button-clear">Navigation</h2>
 
                     <img src="images/friends/fred-confused.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
 
@@ -306,14 +308,18 @@
                     <aside class="notes">While we were doing research on how we could approach the design of the new IRD mobile app, we noticed there was a common pattern that arose out of going through each task.</aside>
                 </section>
 
-                <section>
-                    <img src="images/app/flow.png" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                <section class="flowchart">
+                    <img class="clipped" src="images/flow/flow-all.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+
+                    <div class="fragment moveclip"></div>
+
+                    <div class="fragment moveclip2"></div>
 
                     <aside class="notes">Everything could essentially be broken down into a simple flow chart. And when we say everything, we mean everything. Starting from knowing what to do, to knowing what prerequisite information is required, to actually filling out forms.</aside>
                 </section>
 
-                <section>
-                    <img src="images/general/disconnected.jpg" style="width: auto; height: 300px; border: none; background: none; box-shadow: none;">
+                <section data-background="/images/general/subway-line.png">
+                    <img class="animated pulse infinite" src="images/friends/fred-float-head.svg" style="width: auto; height: 300px; border: none; background: none; box-shadow: none;">
 
                     <aside class="notes">In addition, as expressed by Fred, we noticed that along the way, the Inland Revenue website had an abundance of useful information regarding every step of the task being completed. However, the problem was that it was often disconnected to the context that the user was currently in, making it difficult to find said useful information. Once we realized this, we started to brainstorm ways in which we could take advantage of this fundamental characteristic of the website, and try to link the flow chart nature of the website, along with making context specific information readily available. Which brought a solution to which we refer to as "The Guided Flowchart Navigation" approach</aside>
                 </section>
@@ -522,6 +528,14 @@
             sectionNode = fragmentNode.parent('.quick-search-section');
             sectionNode.find('.pres7').addClass('pres-quick-search');
             sectionNode.find('.pres-gesture').addClass('pres-gesture-quick-search');
+        }
+
+        if (fragmentNode.hasClass('moveclip')) {
+            fragmentNode.parent('.flowchart').find('.clipped').addClass('clipped-2')
+        }
+
+        if (fragmentNode.hasClass('moveclip2')) {
+            fragmentNode.parent('.flowchart').find('.clipped').addClass('clipped-3')
         }
     });
 

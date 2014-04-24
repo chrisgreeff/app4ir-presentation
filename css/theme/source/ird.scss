@@ -120,6 +120,18 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	color: $lorenzo-grey !important;
 }
 
+.button-clear {
+	display: block;
+	width: 400px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	border-radius: 5px;
+	color: $lorenzo-grey;
+	background: $turquoise;
+	padding: 30px 30px !important;
+	color: $lorenzo-grey !important;
+}
+
 .bottom-padding {
 	padding-bottom: 30px !important;
 }
@@ -166,6 +178,28 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 .drop-shadow {
 	box-shadow: 3px 3px 8px #000; 
+}
+
+.clipped {
+	position: relative;
+	top: 100px;
+	-webkit-transform: scale(2,2);
+	-webkit-clip-path: rectangle(20px, 4px, 526px, 68px) !important;
+}
+
+.clipped-2 {
+	position: relative;
+	top: 100px;
+	-webkit-transform: scale(2,2);
+	-webkit-clip-path: rectangle(20px, 4px, 526px, 160px) !important;
+}
+
+.clipped-3 {
+	position: relative;
+	top: 100px;
+	-webkit-transform: scale(1.5,1.5) translatey(-50px) !important;
+	-webkit-clip-path: rectangle(20px, 4px, 526px, 500px) !important;
+
 }
 
 /*********************************************
