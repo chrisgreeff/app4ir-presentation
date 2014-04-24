@@ -245,6 +245,40 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	height: 700px !important;
 	max-height: none !important;
 }
+
+.button-complete {
+	display: inline-block;
+	width: auto;
+	border-radius: 5px;
+	color: $lorenzo-grey;
+	// margin: 0px 100px !important;
+	background: #008B95;
+	padding: 10px 30px !important;
+	color: $lorenzo-grey !important;
+}
+
+.button-pending {
+	display: inline-block;
+	width: auto;
+	border-radius: 5px;
+	color: $lorenzo-grey;
+	// margin: 0px 100px !important;
+	background: #F0BA60;
+	padding: 10px 30px !important;
+	color: $lorenzo-grey !important;
+}
+
+.button-moreinfo {
+	display: inline-block;
+	width: auto;
+	border-radius: 5px;
+	color: $lorenzo-grey;
+	// margin: 0px 100px !important;
+	background: #E77B83;
+	padding: 10px 30px !important;
+	color: $lorenzo-grey !important;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
