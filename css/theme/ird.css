@@ -229,6 +229,9 @@ body {
 .grayscale {
   -webkit-filter: grayscale(100%); }
 
+.drop-shadow {
+  box-shadow: 3px 3px 8px #000; }
+
 /*********************************************
  * HEADERS
  *********************************************/
