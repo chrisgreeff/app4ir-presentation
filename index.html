@@ -335,21 +335,25 @@
                     <aside class="notes">OK 'simple' may be a bit of a stretch, but only on the implementation level. The idea is at it's core is still very simple.</aside>
                 </section>
 
-                <section>
-                    <img src="images/general/20-questions.jpg" style="width: auto; height: 300px; border: none; background: none; box-shadow: none;">
+                <section data-transition="zoom">
+                    <img src="images/general/20-questions.svg" style="width: auto; height: 300px; border: none; background: none; box-shadow: none;">
+                    <h2 class="fragment">but bigger.</h2>
 
                     <aside class="notes">Think "20 questions", but... bigger.</aside>
                 </section>
 
-                <section>
-                    <h2>Our Rational</h2>
+                <section class="rational" data-transition="zoom">
+                    <h2 class="button pintop">Our Rational</h2>
 
-                    <img src="images/app/flow.png" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                    <img class="fixposition flow-all" src="images/flow/flow-all.svg">
+
+                    <img class="fixposition flow-halftone fragment" src="images/flow/flow-halftone.svg">
 
                     <aside class="notes">Ok, so lets take you through our rational on how we generate this Guided Flowchart. Firstly we take the initial steps on identifying what it is you are trying to accomplish, and break that down into a flowchart. For instance, Applying for an IRD number. Next we take the actual forms to complete, and break those down into flowcharts. Lets link them up. So now we have a consistent stream in which a consumer just needs to follow, eventually making it to the forms they need to complete, and actually completing the form.</aside>
                 </section>
 
                 <section>
+                <h2>Streamlined Forms</h2>
                     <div class="pres-iphone">
                         <div class="pres-overlay">
                             <div class="pres1 pres-flow1"></div>
@@ -364,12 +368,15 @@
                 </section>
 
                 <section>
-                    <img src="images/app/flow.png" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                    <img class="flow-vertical" src="images/flow/flow-vertical.svg">
+                    <img class="flow-answer animated fadeInRight infinite" src="images/flow/flow-answer.svg">
+
 
                     <aside class="notes">Finally, while we were exploring the flowchart structure, we noticed that it was very easy to link up specific help information to a particular section the user was currently on. So we tried thinking of a way we could tie this information into the general flow of the app.</aside>
                 </section>
 
                 <section class="quick-help-section">
+                <h2>Swipe for Help</h2>
                     <div class="pres-iphone">
                         <div class="pres-overlay pres-overlay-hidden">
                             <div class="pres6"></div>
@@ -393,12 +400,18 @@
                 </section>
 
                 <section>
-                    <img src="images/app/flow.png" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
+                    <img src="images/general/toggle.svg" style="max-width: none; height: 600px; border: none; background: none; box-shadow: none;">
 
                     <aside class="notes">Now what was important for us to focus on, was not designing an app for 1 specific user type. For instance this caters very well to the Freds who have very little experience with IRD, but not particularly with the Jane's and Mike's. They, being more well versed with IRD, do not need to go through the initial steps in order to figure out what they are trying to do. They already know. So we had to think of a way to cater to both ends of the spectrum. This is where the Quick Search idea came from</aside>
                 </section>
 
+                <section>
+                    <h2>Hotspot Jumping</h2>
+                    <img src="/images/general/hotspot.svg" alt="">
+                </section>
+
                 <section class="quick-search-section">
+                <h2>Quick Search</h2>
                     <div class="pres-iphone">
                         <div class="pres-overlay pres-overlay-hidden">
                             <div class="pres7"></div>
@@ -435,6 +448,7 @@
                 </section>
 
                 <section>
+                <img src="/images/general/two-factor.svg" style="max-width:none; max-height: none; width: 800px;">
                     <aside class="notes">Well the one thing we have to our advantage this is a mobile application, thus automatically unlocking two factor authentication.</aside>
                 </section>
 
@@ -560,6 +574,10 @@
         if (fragmentNode.hasClass('moveclip2')) {
             fragmentNode.parent('.flowchart').find('.clipped').addClass('clipped-3')
         }
+
+        if (fragmentNode.hasClass('flow-halftone')) {
+            fragmentNode.parent('.rational').find('.flow-all').addClass('fadeout')
+        }
     });
 
     Reveal.addEventListener('fragmenthidden', function(event) {
@@ -568,6 +586,10 @@
 
         if (fragmentNode.hasClass('common')) {
             fragmentNode.parent('.demographic').find('.map').removeClass('blur-in');
+        }
+
+        if (fragmentNode.hasClass('flow-halftone')) {
+            fragmentNode.parent('.rational').find('.flow-all').removeClass('fadeout')
         }
     });
     </script>

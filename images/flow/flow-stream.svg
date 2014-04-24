@@ -13,8 +13,8 @@
 	<polygon points="494.3,402.7 272.7,402.7 271.7,402.7 271.7,403.7 281.7,427.2 281.7,428.3 282.7,428.3 484.3,428.3 485.3,428.3 
 		485.3,427.2 495.3,403.7 495.3,402.7 	"/>
 	<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="402.9,84.2 439,84.2 439,104.1 	"/>
-	<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="402.9,50 402.9,84.2 370.5,84.2 370.5,201.6 316,201.6 
-		316,322 227.6,322 227.6,377.2 	"/>
+	<polyline fill="none" stroke="#EF4136" stroke-width="5" stroke-miterlimit="10" points="402.9,50 402.9,84.2 370.5,84.2 
+		370.5,201.6 316,201.6 316,322 227.6,322 227.6,377.2 	"/>
 	<path fill="none" stroke="#010101" stroke-miterlimit="10" d="M406.7,50"/>
 	<g>
 		<g>

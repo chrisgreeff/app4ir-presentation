@@ -191,7 +191,7 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	position: relative;
 	top: 100px;
 	-webkit-transform: scale(2,2);
-	-webkit-clip-path: rectangle(20px, 4px, 526px, 160px) !important;
+	-webkit-clip-path: rectangle(20px, 4px, 526px, 205px) !important;
 }
 
 .clipped-3 {
@@ -199,9 +199,52 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	top: 100px;
 	-webkit-transform: scale(1.5,1.5) translatey(-50px) !important;
 	-webkit-clip-path: rectangle(20px, 4px, 526px, 500px) !important;
-
 }
 
+.flow-stream {
+	-webkit-transform: scale(2,2)
+}
+
+.pintop {
+	position: relative !important;
+	top: -250px;
+}
+
+.fadeout {
+	opacity: 0 !important;
+}
+
+.flow-horizontal {
+		-webkit-transform: scale(2,2);
+}
+
+.flow-vertical {
+	max-width: none !important;
+	max-height: none !important;
+	height: 800px;
+	position: relative;
+	top: -50px;
+	border: none;
+}
+
+.flow-answer {
+	max-width: none !important;
+	max-height: none !important;
+	height: 800px !important;
+	position: relative !important;
+	top: -50px !important;
+	left: -50px !important;
+}
+
+.fixposition {
+	position: absolute !important;
+	top: -150px !important;
+	left: 70px !important;
+	display: inline-block !important;
+	max-width: none !important;
+	height: 700px !important;
+	max-height: none !important;
+}
 /*********************************************
  * HEADERS
  *********************************************/
