@@ -483,6 +483,66 @@ $selectionColor: #fff;
     left: -2px;
 }
 
+.pres-dashboard {
+    @extend .pres-full-screen;
+    background: url("../../../images/app/dashboard.png");
+    background-size: 223px auto;
+    width: 223px;
+    height: 500px;
+    top: 442px;
+}
+
+.pres-dashboard-bottom {
+    @extend .pres-full-screen;
+    background: url("../../../images/app/dashboard-bottom.png");
+    background-size: 223px auto;
+    width: 223px;
+    height: 350px;
+    top: 442px;
+}
+
+.pres-click-gesture {
+    position: absolute;
+    top: 244px;
+    width: 223px;
+    height: 49px;
+    background-color: gray;
+    opacity: 0;
+}
+
+.pres-click-gesture--click {
+    -webkit-animation: quickSearchGesture 3s ease;
+    animation:         quickSearchGesture 3s ease;
+}
+
+.pres-dashboard-move1 {
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+
+    top: 294px;
+}
+
+.pres7-move1 {
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+
+    top: -439px;
+}
+
+.pres-dashboard-move2 {
+    top: 155px;
+}
+
+.pres7-move2 {
+    top: -578px;
+}
+
 .pres-header {
     @extend .pres-default;
     background: url("../../../images/app/fixed-top-header.png");

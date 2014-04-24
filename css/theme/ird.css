@@ -417,12 +417,12 @@ body {
 .pres-overlay-hidden {
   overflow: hidden; }
 
-.pres-default, .pres-full-screen, .pres1, .pres2, .pres3, .pres4, .pres5, .pres6, .pres7, .pres6-menu-bar, .pres6-before-start, .pres7-menu-bar, .pres-header, .pres-options-bar {
+.pres-default, .pres-full-screen, .pres1, .pres2, .pres3, .pres4, .pres5, .pres6, .pres7, .pres-dashboard, .pres-dashboard-bottom, .pres6-menu-bar, .pres6-before-start, .pres7-menu-bar, .pres-header, .pres-options-bar {
   position: absolute;
   left: 0;
   width: 230px; }
 
-.pres-full-screen, .pres1, .pres2, .pres3, .pres4, .pres5, .pres6, .pres7 {
+.pres-full-screen, .pres1, .pres2, .pres3, .pres4, .pres5, .pres6, .pres7, .pres-dashboard, .pres-dashboard-bottom {
   top: 0;
   height: 405px; }
 
@@ -480,6 +480,54 @@ body {
   top: 11px;
   height: 34px;
   left: -2px; }
+
+.pres-dashboard {
+  background: url("../../../images/app/dashboard.png");
+  background-size: 223px auto;
+  width: 223px;
+  height: 500px;
+  top: 442px; }
+
+.pres-dashboard-bottom {
+  background: url("../../../images/app/dashboard-bottom.png");
+  background-size: 223px auto;
+  width: 223px;
+  height: 350px;
+  top: 442px; }
+
+.pres-click-gesture {
+  position: absolute;
+  top: 244px;
+  width: 223px;
+  height: 49px;
+  background-color: gray;
+  opacity: 0; }
+
+.pres-click-gesture--click {
+  -webkit-animation: quickSearchGesture 3s ease;
+  animation: quickSearchGesture 3s ease; }
+
+.pres-dashboard-move1 {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  top: 294px; }
+
+.pres7-move1 {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  top: -439px; }
+
+.pres-dashboard-move2 {
+  top: 155px; }
+
+.pres7-move2 {
+  top: -578px; }
 
 .pres-header {
   background: url("../../../images/app/fixed-top-header.png");
