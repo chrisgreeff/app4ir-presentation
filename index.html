@@ -108,76 +108,68 @@
                         <canvas class="fragment" id="canvas3" height="250" width="250"></canvas>
                     </div>
                     <script>
-                        var doughnutData = [
-                                {
-                                    value: 30,
-                                    color:"#F7464A"
-                                },
-                                {
-                                    value : 50,
-                                    color : "#46BFBD"
-                                },
-                                {
-                                    value : 100,
-                                    color : "#FDB45C"
-                                },
-                                {
-                                    value : 40,
-                                    color : "#949FB1"
-                                },
-                                {
-                                    value : 120,
-                                    color : "#4D5360"
-                                }
-                            
-                            ];
-
-                        var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
-                       
-                        var lineChartData = {
-                            labels : ["January","February","March","April","May","June","July"],
-                            datasets : [
-                                {
-                                    fillColor : "rgba(220,220,220,0.5)",
-                                    strokeColor : "rgba(220,220,220,1)",
-                                    pointColor : "rgba(220,220,220,1)",
-                                    pointStrokeColor : "#fff",
-                                    data : [65,59,90,81,56,55,40]
-                                },
-                                {
-                                    fillColor : "rgba(151,187,205,0.5)",
-                                    strokeColor : "rgba(151,187,205,1)",
-                                    pointColor : "rgba(151,187,205,1)",
-                                    pointStrokeColor : "#fff",
-                                    data : [28,48,40,19,96,27,100]
-                                }
-                            ]
+                    var doughnutData = [{
+                            value: 30,
+                            color: "#F7464A"
+                        }, {
+                            value: 50,
+                            color: "#46BFBD"
+                        }, {
+                            value: 100,
+                            color: "#FDB45C"
+                        }, {
+                            value: 40,
+                            color: "#949FB1"
+                        }, {
+                            value: 120,
+                            color: "#4D5360"
                         }
 
-                        var myLine = new Chart(document.getElementById("canvas2").getContext("2d")).Line(lineChartData);
+                    ];
 
-                        var radarChartData = {
-                            labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
-                            datasets : [
-                                {
-                                    fillColor : "rgba(220,220,220,0.5)",
-                                    strokeColor : "rgba(220,220,220,1)",
-                                    pointColor : "rgba(220,220,220,1)",
-                                    pointStrokeColor : "#fff",
-                                    data : [65,59,90,81,56,55,40]
-                                },
-                                {
-                                    fillColor : "rgba(151,187,205,0.5)",
-                                    strokeColor : "rgba(151,187,205,1)",
-                                    pointColor : "rgba(151,187,205,1)",
-                                    pointStrokeColor : "#fff",
-                                    data : [28,48,40,19,96,27,100]
-                                }
-                            ]
-                            
-                        }
+                    var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
 
-    var myRadar = new Chart(document.getElementById("canvas3").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
+                    var lineChartData = {
+                        labels: ["January", "February", "March", "April", "May", "June", "July"],
+                        datasets: [{
+                            fillColor: "rgba(220,220,220,0.5)",
+                            strokeColor: "rgba(220,220,220,1)",
+                            pointColor: "rgba(220,220,220,1)",
+                            pointStrokeColor: "#fff",
+                            data: [65, 59, 90, 81, 56, 55, 40]
+                        }, {
+                            fillColor: "rgba(151,187,205,0.5)",
+                            strokeColor: "rgba(151,187,205,1)",
+                            pointColor: "rgba(151,187,205,1)",
+                            pointStrokeColor: "#fff",
+                            data: [28, 48, 40, 19, 96, 27, 100]
+                        }]
+                    }
+
+                    var myLine = new Chart(document.getElementById("canvas2").getContext("2d")).Line(lineChartData);
+
+                    var radarChartData = {
+                        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Partying", "Running"],
+                        datasets: [{
+                            fillColor: "rgba(220,220,220,0.5)",
+                            strokeColor: "rgba(220,220,220,1)",
+                            pointColor: "rgba(220,220,220,1)",
+                            pointStrokeColor: "#fff",
+                            data: [65, 59, 90, 81, 56, 55, 40]
+                        }, {
+                            fillColor: "rgba(151,187,205,0.5)",
+                            strokeColor: "rgba(151,187,205,1)",
+                            pointColor: "rgba(151,187,205,1)",
+                            pointStrokeColor: "#fff",
+                            data: [28, 48, 40, 19, 96, 27, 100]
+                        }]
+
+                    }
+
+                    var myRadar = new Chart(document.getElementById("canvas3").getContext("2d")).Radar(radarChartData, {
+                        scaleShowLabels: false,
+                        pointLabelFontSize: 10
+                    });
                     </script>
 
                     <aside class="notes">In preparing this presentation, we wondered where to start. I guess what we could do is define the problem by showing you some numbers and statistics, while going through an assortment of arbitrary graphs, while trying to theoretically prove some fundamental issue in your system. But we think we might just end up being like buzz lightyear here * So instead, we thought we'd start by introducing you to some of our friends. You may have already met them.</aside>
@@ -273,7 +265,7 @@
                 </section>
 
                 <section data-transition="fade">
-                <h2>Issues Identified</h2>
+                    <h2>Issues Identified</h2>
                     <h4 class="fragment button">Navigation</h4>
                     <h4 class="fragment button">Verification</h4>
                     <h4 class="fragment button">Communication</h4>
@@ -445,21 +437,89 @@
             </section>
 
             <section>
-                <h2>Communication</h2>
+                <!-- ============================= Communication =============================== -->
 
-                <aside class="notes">One of the main problems we were trying to address was the communication problems that exist between users and IRD. Not only from the user to IRD, but also from IRD to the user. So we thought to use push notification could be taken advantage of rather than traditional means of communication, which can often be ineffective. We want EasyIR to be the bridge to a healthy relationship between IRD and it's users. And, we all know, like any relationship, we believe that 2 way communication is key to keeping everyone happy chappies.</aside>
+                <section data-background="./images/gifs/communication.gif">
+                    <div class="darkbg">
+                        <h3>HARD TO FIND THE WORDS</h3>
+                    </div>
+
+                    <aside class="notes">At the core of every good relationship, is communication.</aside>
+                </section>
+
+                <section>
+
+                    IMAGE: Big arrow from consumer to IRD, but small arrow from IRD to consumer?
+
+                    <aside class="notes">As illustrated with Fred's case, the communication problem we see is not from the consumer to IRD, but more specifically from IRD to the consumer.</aside>
+                </section>
+
+                <section>
+
+                    IMAGE: Fragments of the different types of items that might appear in the dashboard.
+
+                    <aside class="notes">So while trying to think of a solution for this problem, we came up with the dashboard. The dash board serves two purposes. It firstly gives a summary of the current applications the user has in play. This being applications they have not completed yet, have completed, but are waiting for a response, or (and most importantly) forms that they need to complete soon, or are overdue.</aside>
+                </section>
+
+                <section>
+
+                    <div class="pres-iphone pres-overlay-hidden">
+                        <div class="pres-overlay">
+                            <div class="pres-ani-app">
+                                <div class="pres-dashboard1"></div>
+                                <div class="pres7-menu-bar"></div>
+                                <div class="pres-ani pres-ani-checkbox-bar pres-ani-checkbox-bar1">
+                                    <div class="pres-progress-checkbox pres-progress-checkbox-quater-1 pres-progress-checkbox-quater-first"></div>
+                                    <div class="pres-progress-checkbox pres-progress-checkbox-quater-2 pres-progress-checkbox-quater-second"></div>
+                                    <div class="pres-progress-checkbox pres-progress-checkbox-quater-3 pres-progress-checkbox-quater-third"></div>
+                                    <div class="pres-progress-checkbox pres-progress-checkbox-quater-4 pres-progress-checkbox-quater-fourth"></div>
+                                </div>
+
+                                <div class="pres-ani-dashboard-profile pres-ani-next"></div>
+                                <div class="pres-ani-dashboard2 pres-ani-next"></div>
+                                <div class="pres-ani-dashboard-bottom pres-ani-next"></div>
+                                <div class="pres-ani-menu-bar-dashboard2 pres-ani-next"></div>
+                                <div class="pres-ani-press-dashboard"></div>
+                            </div>
+
+                            <div class="pres-ani pres-ani-header"></div>
+                            <div class="pres-ani pres-ani-open"></div>
+                            <div class="pres-ani-swipe-gesture"></div>
+                        </div>
+                    </div>
+
+                    <aside class="notes">Not only would these inform or alert the consumer of applications they currently have going, but also hook in to "hot spots" that we mentioned previously, allowing users to jump straight to applications that need their attention.</aside>
+                </section>
+
+                <section>
+
+                    <img src="images/app/pushnotification.png" style="width: auto; height: 500px; border: none; background: none; box-shadow: none;">
+
+                    <aside class="notes">We could also have the application hook in to the push notification setting on the mobile device, getting even more intimate.</aside>
+                </section>
             </section>
 
             <section>
-                <h2>Dashboard</h2>
-
-                <aside class="notes">Let's face it, when life gets busy, dealing with IRD applications is probably the last thing you want to do. Getting penalized for missing important due dates makes it even worse. If only there was a personal assistant to manage your IRD applications, enquiries and feedback! Well with EasyIR, we came up with the Dashboard to take care of all this for you. When you sign in the Dashboard will be the first thing you see. Giving you a summary of all tasks and applications that are specific to you. This includes completed forms that you can reference, pending tasks that you may have left to complete at a later date, and urgent tasks that require your immediate attention. All of which have a direct connection to the Flowchart, allowing the user to quickly jump to a particular section if they need to.</aside>
+                Conclusion.
             </section>
 
             <section>
-                <h2>Modern Lifestyle</h2>
+                <section>
+                    <aside class="notes">There is also an apparent change in the way that we interact with mobile applications.</aside>
+                </section>
 
-                <aside class="notes">There is also an apparent change in the way that we interact with mobile applications. Not too long ago, we would dedicate a good chunk out of our day to sit down an accomplish a task at hand. Nowadays, we expect to be able to finish anything in a minute, or somewhere close to that. This is the kind of interaction that we had in our mind while deigning the user experience of the application. In addition having the ability to pick up from where you left off.</aside>
+                <section>
+                     <aside class="notes">We recognized that it was not too long ago, we would dedicate a good chunk out of our day to sit down an accomplish a task at hand.</aside>
+                </section>
+
+                <section>
+                    <aside class="notes">Nowadays, we expect to be able to finish anything within something close to a minute or less.</aside>
+                </section>
+
+                <section>
+                    <aside class="notes">This is the kind of interaction that we had in our mind while deigning the user experience of the application. In addition having the ability to pick up from where you left off</aside>
+                </section>
+
             </section>
         </div>
 
