@@ -244,22 +244,19 @@ body {
   box-shadow: 3px 3px 8px #000; }
 
 .clipped {
-  position: relative;
   top: 100px;
-  -webkit-transform: scale(2, 2);
-  -webkit-clip-path: rectangle(20px, 4px, 526px, 68px) !important; }
+  -webkit-transform: scale(2, 2) translatey(200px);
+  -webkit-clip-path: rectangle(20px, 4px, 700px, 120px) !important; }
 
 .clipped-2 {
-  position: relative;
   top: 100px;
-  -webkit-transform: scale(2, 2);
-  -webkit-clip-path: rectangle(20px, 4px, 526px, 205px) !important; }
+  -webkit-transform: scale(2, 2) translatey(100px);
+  -webkit-clip-path: rectangle(20px, 4px, 800px, 244px) !important; }
 
 .clipped-3 {
-  position: relative;
   top: 100px;
-  -webkit-transform: scale(1.5, 1.5) translatey(-50px) !important;
-  -webkit-clip-path: rectangle(20px, 4px, 526px, 500px) !important; }
+  -webkit-transform: scale(1, 1) translatey(-100px) !important;
+  -webkit-clip-path: rectangle(20px, 4px, 800px, 800px) !important; }
 
 .flow-stream {
   -webkit-transform: scale(2, 2); }
@@ -267,6 +264,10 @@ body {
 .pintop {
   position: relative !important;
   top: -250px; }
+
+.pintop2 {
+  position: relative !important;
+  top: -150px; }
 
 .fadeout {
   opacity: 0 !important; }
@@ -281,6 +282,9 @@ body {
   position: relative;
   top: -50px;
   border: none; }
+
+.flow-all {
+  display: none !important; }
 
 .flow-answer {
   max-width: none !important;
@@ -323,6 +327,24 @@ body {
   border-radius: 5px;
   color: #f1f0ee;
   background: #E77B83;
+  padding: 10px 30px !important;
+  color: #f1f0ee !important; }
+
+.button-security {
+  display: inline-block;
+  border-radius: 5px;
+  color: #f1f0ee;
+  background: #34495e;
+  margin-right: 30px !important;
+  padding: 10px 30px !important;
+  color: #f1f0ee !important; }
+
+.button-ux {
+  display: inline-block;
+  border-radius: 5px;
+  color: #f1f0ee;
+  margin-left: 30px !important;
+  background: #f4575f;
   padding: 10px 30px !important;
   color: #f1f0ee !important; }
 

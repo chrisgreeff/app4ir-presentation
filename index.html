@@ -52,44 +52,48 @@
         <div class="slides">
             <section data-background="./images/general/intro-small.jpg">
                 <div class="title-left">
-                    <h3>[Insert Name]</h3>
+                    <h3>RUSHIR</h3>
                     <h4>Dealing with IRD, quick and easy.</h4>
                 </div>
 
             </section>
 
-            <section data-transition="zoom">
-                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-                <!-- ============================== INTRODUCTION ============================== -->
-                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <section>
+                <section data-transition="zoom">
+                    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                    <!-- ============================== INTRODUCTION ============================== -->
+                    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-                <div class="column">
-                    <img class="profilepic" src="./images/team/chris-dot.png" alt="">
-                    <h2>Chris</h2>
-                    <div class="button">
-                        <span class="fa fa-code"></span>Developer</div>
-                </div>
-                <div class="column">
-                    <img class="profilepic" src="./images/team/jacky-dot.png" alt="">
-                    <h2>Jacky</h2>
-                    <div class="button">
-                        <span class="fa fa-pencil"></span>Designer</div>
-                </div>
+                    <div class="column">
+                        <img class="profilepic" src="./images/team/chris.png" alt="">
+                        <h2>Chris</h2>
+                        <div class="button">
+                            <span class="fa fa-code"></span>Developer</div>
+                    </div>
+                    <div class="column">
+                        <img class="profilepic" src="./images/team/jacky.png" alt="">
+                        <h2>Jacky</h2>
+                        <div class="button">
+                            <span class="fa fa-pencil"></span>Designer</div>
+                    </div>
 
-                <!-- GIF: Dancing weirdos -->
+                    <!-- GIF: Dancing weirdos -->
 
-                <aside class="notes">Hello, I'm Chris the developer and this is Jacky the designer. All you really need to know about us is that we love challenging ourselves to create apps that are beautiful, simple, easy to use that solve first world problems. Plus we like to dance</aside>
-            </section>
+                    <aside class="notes">Hello, I'm Chris the developer and this is Jacky the designer. All you really need to know about us is that we love challenging ourselves to create apps that are beautiful, simple, easy to use but most importantly, solve problems, but solve what, exactly?</aside>
+                </section>
 
-            <section data-transition="fade">
-                <h2>Beautiful</h2>
-                <h2 class="fragment roll-in">Simple</h2>
-                <h2 class="fragment roll-in bottom-padding">User Friendly</h2>
-                <div class="fragment roll-in">
-                    <h4><i>most importantly...</i>
-                    </h4>
-                    <h2 class="button">Solve Problems</h2>
-                </div>
+                <section data-transition="fade">
+                    <h2>Beautiful</h2>
+                    <h2 class="fragment roll-in">Simple</h2>
+                    <h2 class="fragment roll-in bottom-padding">User Friendly</h2>
+                    <div class="fragment roll-in">
+                        <h4><i>most importantly...</i>
+                        </h4>
+                        <h2 class="button">Solve Problems</h2>
+                    </div>
+
+                    <aside class="notes">Hello, I'm Chris the developer and this is Jacky the designer. All you really need to know about us is that we love challenging ourselves to create apps that are beautiful, simple, easy to use but most importantly, solve problems, but solve what, exactly?</aside>
+                </section>
             </section>
 
             <section>
@@ -179,6 +183,7 @@
                     <div class="darkbg">
                         <h3>CHECK OUT THESE GRAPHS</h3>
                     </div>
+                    <aside class="notes">In preparing this presentation, we wondered where to start. I guess what we could do is define the problem by showing you some numbers and statistics, while going through an assortment of arbitrary graphs, while trying to theoretically prove some fundamental issue in your system. But we think we might just end up being like buzz lightyear here * So instead, we thought we'd start by introducing you to some of our friends. You may have already met them.</aside>
                 </section>
 
                 <section data-state="meet-friends">
@@ -300,11 +305,8 @@
                 </section>
 
                 <section class="flowchart">
-                    <img class="clipped" src="images/flow/flow-all.svg" style="width: auto; height: 400px; border: none; background: none; box-shadow: none;">
-
-                    <div class="fragment moveclip"></div>
-
-                    <div class="fragment moveclip2"></div>
+                <h2>Flow Chart Structure</h2>
+                    <img src="images/flow/flow-all.svg">
 
                     <aside class="notes">Everything could essentially be broken down into a simple flow chart. And when we say everything, we mean everything. Starting from knowing what to do, to knowing what prerequisite information is required, to actually filling out forms.</aside>
                 </section>
@@ -334,12 +336,14 @@
                 <aside class="notes">Think "20 questions", but... bigger.</aside>
                 </section>
 
-                <section class="rational" data-transition="zoom">
-                <h2 class="button pintop">Our Rational</h2>
+                <section class="rational flowchart" data-transition="zoom">
 
-                <img class="fixposition flow-all" src="images/flow/flow-all.svg">
+                <img class="fixposition clipped flow-all" src="images/flow/flow-all.svg">
 
-                <img class="fixposition flow-halftone fragment" src="images/flow/flow-halftone.svg">
+                <div class="fragment moveclip"></div>
+
+                <div class="fragment moveclip2"></div>
+                <img class="fixposition flow-halftone fragment" src="images/flow/flow-halftone.svg" style="top: -250px !important;">
 
                 <aside class="notes">Ok, so lets take you through our rational on how we generate this Guided Flowchart. Firstly we take the initial steps on identifying what it is you are trying to accomplish, and break that down into a flowchart. For instance, Applying for an IRD number. Next we take the actual forms to complete, and break those down into flowcharts. Lets link them up. So now we have a consistent stream in which a consumer just needs to follow, eventually making it to the forms they need to complete, and actually completing the form.</aside>
                 </section>
@@ -409,6 +413,12 @@
 
                     <aside class="notes">Quick Search basically allows the user to jump to a particular section in the flowchart. We call these "hot spots". Areas of the application that we know are key areas in which a user has to begin to have properly completed a specific task. The way in which we made these "hot spots" is by having a search bar available in the dashboard, the user can quickly type the application name or keywords to get around the app too. In addition we could build a 'popular tasks' section which will auto update based user interaction, or time of the year.</aside>
                 </section>
+
+                <section>
+                    <h2>Hotspot Jumping</h2>
+                    <img src="/images/general/hotspot.svg" alt="">
+                </section>
+
             </section>
 
             <section>
@@ -420,6 +430,7 @@
                 </section>
 
                 <section>
+                <h4 class="button-security">Security</h4> vs <h4 class="button-ux">User Experience</h4>
                     <aside class="notes">Security is one of those problems that there just doesn't seem to be a silver bullet for, especially when there are things like the Heartbleed bug cropping up.</aside>
                 </section>
 
@@ -432,10 +443,13 @@
                 </section>
 
                 <section>
+                <h2>Two Factor Authentication</h2>
+                <img src="/images/general/two-factor.svg" style="height: 600px;">
                     <aside class="notes">Well the one thing we have to our advantage this is a mobile application, thus automatically unlocking two factor authentication.</aside>
                 </section>
 
                 <section>
+                VERIFICATION ANIMATION HERE?
                     <aside class="notes">Similar to the way in which a lot of New Zealand banks are doing with their mobile apps, by registering a specific device to a particular account with a password/PIN, IRD can be more confident that any interactions with our app are coming from a legitimate source, and therefore more readily give our Jane's specific and privileged information.</aside>
                 </section>
 
@@ -498,30 +512,37 @@
 
                     <aside class="notes">We could also have the application hook in to the push notification setting on the mobile device, getting even more intimate.</aside>
                 </section>
+                <section>
+                    <h3 class="button">Review</h3>
+                    <img src="/images/general/summary-screens.png">
+
+                    <aside class="notes">What you have just seen were demonstrations of how we solve these three issues, as mentioned earlier. It's important to also note that while we were designing for these features, we had one coherent underlying theme behind all of them.</aside>
+                </section>
             </section>
 
             <section>
-                Conclusion.
+                <section>
+                    <h2 class="button">1st World Problems</h2>
+                    <h4>Need 1st World Solutions</h4>
+                    <img class="animated tada infinite" src="/images/general/busyman.svg" style="height:200px;">
+
+                    <aside class="notes">We realised that to design for the people of this day and age, we had to change the way we perceive productivity.</aside>
+                </section>
+
+                <section>
+                    <img src="/images/general/nobodygottime-then.svg" style="height:600px;">
+                    <img class="fragment" src="/images/general/nobodygottime-now.svg" style="height: 600px;">
+                     <aside class="notes">Reasons being, that it was not too long ago, we would dedicate a good chunk out of our day to sit down an accomplish a task at hand. Nowadays, we expect to be able to finish anything within something close to a minute or less.</aside>
+                </section>
+
+                <section>
+                <h4 class="button pintop2">Built for the Modern Lifestyle</h4>
+                    <img src="/images/general/multiplatform.svg" style="-webkit-transform: scale(1.5, 1.5)">
+                    <aside class="notes">This is the kind of interaction that we had in our mind while designing the user experience of the application. In addition having the ability to pick up from where you left off</aside>
+                </section>
             </section>
 
-            <section>
-                <section>
-                    <aside class="notes">There is also an apparent change in the way that we interact with mobile applications.</aside>
-                </section>
 
-                <section>
-                     <aside class="notes">We recognized that it was not too long ago, we would dedicate a good chunk out of our day to sit down an accomplish a task at hand.</aside>
-                </section>
-
-                <section>
-                    <aside class="notes">Nowadays, we expect to be able to finish anything within something close to a minute or less.</aside>
-                </section>
-
-                <section>
-                    <aside class="notes">This is the kind of interaction that we had in our mind while deigning the user experience of the application. In addition having the ability to pick up from where you left off</aside>
-                </section>
-
-            </section>
         </div>
 
     </div>
@@ -533,6 +554,7 @@
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
+        slideNumber: true,
         controls: true,
         progress: true,
         history: true,
@@ -622,6 +644,10 @@
             fragmentNode.parent('.flowchart').find('.clipped').addClass('clipped-3')
         }
 
+        if (fragmentNode.hasClass('flow-halftone')) {
+            fragmentNode.parent('.rational').find('.flow-all').addClass('fadeout')
+        }
+
         if (fragmentNode.hasClass('dashboard-animation')) {
             sectionNode = fragmentNode.parent('.dashboard-section');
             sectionNode.find('.pres7').addClass('pres7-move1');
@@ -645,6 +671,10 @@
 
         if (fragmentNode.hasClass('common')) {
             fragmentNode.parent('.demographic').find('.map').removeClass('blur-in');
+        }
+
+        if (fragmentNode.hasClass('flow-halftone')) {
+            fragmentNode.parent('.rational').find('.flow-all').removeClass('fadeout')
         }
     });
     </script>

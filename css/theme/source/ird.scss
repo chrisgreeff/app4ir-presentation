@@ -181,24 +181,21 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 }
 
 .clipped {
-	position: relative;
 	top: 100px;
-	-webkit-transform: scale(2,2);
-	-webkit-clip-path: rectangle(20px, 4px, 526px, 68px) !important;
+	-webkit-transform: scale(2,2) translatey(200px);
+	-webkit-clip-path: rectangle(20px, 4px, 700px, 120px) !important;
 }
 
 .clipped-2 {
-	position: relative;
 	top: 100px;
-	-webkit-transform: scale(2,2);
-	-webkit-clip-path: rectangle(20px, 4px, 526px, 205px) !important;
+	-webkit-transform: scale(2,2) translatey(100px);
+	-webkit-clip-path: rectangle(20px, 4px, 800px, 244px) !important;
 }
 
 .clipped-3 {
-	position: relative;
 	top: 100px;
-	-webkit-transform: scale(1.5,1.5) translatey(-50px) !important;
-	-webkit-clip-path: rectangle(20px, 4px, 526px, 500px) !important;
+	-webkit-transform: scale(1, 1) translatey(-100px) !important;
+	-webkit-clip-path: rectangle(20px, 4px, 800px, 800px) !important;
 }
 
 .flow-stream {
@@ -208,6 +205,11 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 .pintop {
 	position: relative !important;
 	top: -250px;
+}
+
+.pintop2 {
+	position: relative !important;
+	top: -150px;
 }
 
 .fadeout {
@@ -225,6 +227,10 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	position: relative;
 	top: -50px;
 	border: none;
+}
+
+.flow-all {
+	display: none !important;
 }
 
 .flow-answer {
@@ -275,6 +281,28 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	color: $lorenzo-grey;
 	// margin: 0px 100px !important;
 	background: #E77B83;
+	padding: 10px 30px !important;
+	color: $lorenzo-grey !important;
+}
+
+.button-security {
+	display: inline-block;
+	border-radius: 5px;
+	color: $lorenzo-grey;
+	// margin: 0px 100px !important;
+	background: $wetasphalt;
+	margin-right: 30px !important;
+	padding: 10px 30px !important;
+	color: $lorenzo-grey !important;
+}
+
+.button-ux {
+	display: inline-block;
+	border-radius: 5px;
+	color: $lorenzo-grey;
+	margin-left: 30px !important;
+	// margin: 0px 100px !important;
+	background: $awesomepink;
 	padding: 10px 30px !important;
 	color: $lorenzo-grey !important;
 }

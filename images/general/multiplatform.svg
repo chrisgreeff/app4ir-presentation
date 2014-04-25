@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2610px" height="808px" viewBox="0 0 2610 808" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>Multiplatform</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Macbook-Pro" sketch:type="MSLayerGroup" transform="translate(3.000000, 2.000000)" stroke="#34495E" stroke-width="4">
+            <path d="M1386,788.830753 C1386,789.477843 1385.47727,790 1384.84617,790 L1.15701601,790 C0.516354254,790 0,789.477843 0,788.830753 L0,749.169247 C0,748.531767 0.519541626,748 1.15701601,748 L1384.84617,748 C1385.47727,748 1386,748.531767 1386,749.169247 L1386,788.830753 L1386,788.830753 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M1266,44.8809585 C1266,20.0939079 1245.98086,0 1221.30047,0 L170.70635,0 C146.019143,0 126,20.0939079 126,44.8809585 L126,748 L1265.99659,748 L1265.99659,44.8809585 L1266,44.8809585 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle" sketch:type="MSShapeGroup" x="172" y="44" width="1048" height="660"></rect>
+            <path d="M1,790 C5.00441509,798.091708 17.4363183,804 32.1820256,804 L1353.81797,804 C1368.55729,804 1380.99558,798.095552 1385,790 L1,790 L1,790 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M604.307179,748 C604.13759,749.04682 604,750.110416 604,751.200854 C604,761.578466 612.028242,770 621.928353,770 L770.078047,770 C779.981358,770 788,761.578466 788,751.200854 C788,750.110416 787.868809,749.04682 787.692821,748 L604.307179,748 L604.307179,748 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+        <path d="M779,400 L1580.03998,400" id="Line" stroke="#34495E" stroke-width="6" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M1816,405 L2272.15787,405" id="Line-2" stroke="#34495E" stroke-width="6" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <g id="iPad" sketch:type="MSLayerGroup" transform="translate(2086.000000, 61.000000)" stroke="#34495E" stroke-width="4">
+            <path d="M2.55929969e-13,25.0261402 C2.55929969e-13,11.2007956 11.1298528,0 24.8575717,0 L497.142428,0 C510.870147,0 522,11.2007956 522,25.0261402 L522,660.97386 C522,674.794672 510.870147,686 497.142428,686 L24.8575717,686 C11.1298528,686 0,674.794672 0,660.97386 L0,25.0261402 L2.55929969e-13,25.0261402 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle" sketch:type="MSShapeGroup" x="28" y="48" width="466" height="558"></rect>
+            <ellipse id="Oval" sketch:type="MSShapeGroup" cx="260.72386" cy="23.7168338" rx="4.81492299" ry="4.84768412"></ellipse>
+            <circle id="Oval" sketch:type="MSShapeGroup" cx="261" cy="646" r="21"></circle>
+            <path d="M268,651.861326 C268,652.49329 267.515012,653 266.922248,653 L255.083141,653 C254.484988,653 254,652.49329 254,651.861326 L254,640.144368 C254,639.512403 254.484988,639 255.083141,639 L266.922248,639 C267.515012,639 268,639.512403 268,640.144368 L268,651.861326 L268,651.861326 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+        <g id="iPhone" sketch:type="MSLayerGroup" transform="translate(1580.000000, 157.000000)" stroke="#34495E" stroke-width="4">
+            <path d="M236,468.769054 C236,482.706762 224.746888,494 210.871749,494 L25.1224111,494 C11.2472719,494 0,482.706762 0,468.769054 L0,25.2368099 C0,11.2991015 11.2472719,0 25.1224111,0 L210.871749,0 C224.746888,0 236,11.2991015 236,25.2368099 L236,468.769054 L236,468.769054 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M97,48 C97,50.7554981 99.0160701,53 101.511322,53 L132.482834,53 C134.98393,53 137,50.7554981 137,48 L137,48 C137,45.2380336 134.98393,43 132.482834,43 L101.511322,43 C99.0160701,43 97,45.2380336 97,48 L97,48 L97,48 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <ellipse id="Oval" sketch:type="MSShapeGroup" cx="115.72386" cy="23.7168338" rx="4.81492299" ry="4.84768412"></ellipse>
+            <rect id="Rectangle" sketch:type="MSShapeGroup" x="14" y="72" width="206" height="350"></rect>
+            <circle id="Oval" sketch:type="MSShapeGroup" cx="117" cy="458" r="21"></circle>
+            <path d="M124,463.861326 C124,464.49329 123.515012,465 122.922248,465 L111.083141,465 C110.484988,465 110,464.49329 110,463.861326 L110,452.144368 C110,451.512403 110.484988,451 111.083141,451 L122.922248,451 C123.515012,451 124,451.512403 124,452.144368 L124,463.861326 L124,463.861326 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+        <text id="START" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="30" font-weight="bold" sketch:alignment="middle" fill="#34495E">
+            <tspan x="650.94" y="383.279901">START</tspan>
+            <tspan x="657.9" y="420.279901">HERE</tspan>
+        </text>
+        <text id="FINISH" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="30" font-weight="bold" sketch:alignment="middle" fill="#34495E">
+            <tspan x="2299.315" y="383.279901">FINISH</tspan>
+            <tspan x="2308.9" y="420.279901">HERE</tspan>
+        </text>
+        <text id="10:30:10:30" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="30" font-weight="bold" sketch:alignment="middle" fill="#34495E">
+            <tspan x="1621.77" y="395.459926">CONTINUE</tspan>
+            <tspan x="1659.9" y="432.459926">HERE</tspan>
+        </text>
+    </g>
+</svg>
