@@ -245,18 +245,18 @@ body {
 
 .clipped {
   top: 100px;
-  -webkit-transform: scale(2, 2) translatey(200px);
-  -webkit-clip-path: rectangle(20px, 4px, 700px, 120px) !important; }
+  -webkit-transform: scale(1, 1) translatey(0px);
+  -webkit-clip-path: rectangle(20px, 4px, 700px, 206px) !important; }
 
 .clipped-2 {
   top: 100px;
-  -webkit-transform: scale(2, 2) translatey(100px);
-  -webkit-clip-path: rectangle(20px, 4px, 800px, 244px) !important; }
+  -webkit-transform: scale(1, 1) translatey(-100px);
+  -webkit-clip-path: rectangle(20px, 4px, 800px, 476px) !important; }
 
 .clipped-3 {
   top: 100px;
-  -webkit-transform: scale(1, 1) translatey(-100px) !important;
-  -webkit-clip-path: rectangle(20px, 4px, 800px, 800px) !important; }
+  -webkit-transform: scale(1, 1) translatey(-200px) !important;
+  -webkit-clip-path: rectangle(20px, 4px, 800px, 900px) !important; }
 
 .flow-stream {
   -webkit-transform: scale(2, 2); }
