@@ -355,6 +355,22 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	max-width: 200px !important;
 }
 
+.togglehandle {
+	position: relative !important;
+	top: -230px !important;
+	left: -120px !important;
+	height: 200px !important;
+}
+
+.slide-right {
+	left: 80px !important;
+	-webkit-transition: all 0.8s ease-in-out !important;
+	-moz-transition: all 0.8s ease-in-out !important;
+	-ms-transition: all 0.8s ease-in-out !important;
+	-o-transition: all 0.8s ease-in-out !important;
+	transition: all 0.8s ease-in-out !important;
+}
+
 // Text selection
 $selectionBackgroundColor: $awesomepink !importantt;
 $selectionColor: #fff;

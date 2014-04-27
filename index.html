@@ -265,8 +265,10 @@
                     <aside class="notes">And so Swipe For Help was born. At every step of the way, additional information that is specific to the question in context is at the users fingertips. Literally.</aside>
                 </section>
 
-                <section>
+                <section class="toggle">
                     <img src="images/general/toggle.svg" style="max-width: none; height: 600px; border: none; background: none; box-shadow: none;">
+                    <img class="togglehandle" src="images/general/toggle-handle.svg">
+                    <span class="fragment slideright"></span>
 
                     <aside class="notes">Now what was important for us to focus on, was not designing an app for 1 specific user type. For instance this caters very well to the Freds who have very little experience with IRD, but not particularly with the Jane's and Mike's. They, being more well versed with IRD, do not need to go through the initial steps in order to figure out what they are trying to do. They already know. So we had to think of a way to cater to both ends of the spectrum. This is where the Quick Search idea came from</aside>
                 </section>
@@ -603,6 +605,10 @@
             fragmentNode.parent('.rational').find('.flow-all').addClass('fadeout')
         }
 
+        if (fragmentNode.hasClass('slideright')) {
+            fragmentNode.parent('.toggle').find('.togglehandle').addClass('slide-right');
+        }
+
         if (fragmentNode.hasClass('dashboard-animation')) {
             sectionNode = fragmentNode.parent('.dashboard-section');
             sectionNode.find('.pres7').addClass('pres7-move1');
@@ -630,6 +636,10 @@
 
         if (fragmentNode.hasClass('flow-halftone')) {
             fragmentNode.parent('.rational').find('.flow-all').removeClass('fadeout')
+        }
+
+        if (fragmentNode.hasClass('slideright')) {
+            fragmentNode.parent('.toggle').find('.togglehandle').removeClass('slide-right');
         }
     });
     </script>
