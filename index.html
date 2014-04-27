@@ -108,9 +108,9 @@
                         <h2>Solve What?</h2>
                     </div>
                     <div class="chart">
-                        <canvas id="canvas1" height="250" width="250"></canvas>
-                        <canvas id="canvas2" height="250" width="250"></canvas>
-                        <canvas id="canvas3" height="250" width="250"></canvas>
+                        <canvas id="canvas1" height="300" width="300"></canvas>
+                        <canvas id="canvas2" height="300" width="300"></canvas>
+                        <canvas id="canvas3" height="300" width="300"></canvas>
                     </div>
                 </section>
 
@@ -198,7 +198,7 @@
 
                 <section data-transition="zoom">
                     <img src="images/general/20-questions.svg" style="width: auto; height: 300px; border: none; background: none; box-shadow: none;">
-                    <h2 class="fragment">but bigger.</h2>
+                    <h2 class="fragment animated pulse infinite">but bigger.</h2>
 
                     <aside class="notes">Think "20 questions", but... bigger.</aside>
                 </section>
@@ -236,7 +236,7 @@
 
                 <section>
                     <img class="flow-vertical" src="images/flow/flow-vertical.svg">
-                    <img class="flow-answer animated fadeInRight" src="images/flow/flow-answer.svg">
+                    <img class="flow-answer fragment" src="images/flow/flow-answer.svg">
 
 
                     <aside class="notes">We noticed that it was very easy to link up specific help information to a particular section the user was currently on. So we tried thinking of a way we could tie this information into the general flow of the app.</aside>
@@ -248,10 +248,10 @@
                             <div class="pres6"></div>
                             <div class="pres6-before-start"></div>
                             <div class="pres-options-table pres-options-bar">
-                                <div class="pres-options-cell pres-options-yes">
+                                <div class="pres-options-cell pres-options-yes" style="border-top: 1px solid #d4d4d4; border-right: 1px solid #d4d4d4;">
                                     Yes
                                 </div>
-                                <div class="pres-options-cell pres-options-no">
+                                <div class="pres-options-cell pres-options-no" style="border-top: 1px solid #d4d4d4;">
                                     No
                                 </div>
                             </div>
@@ -500,6 +500,8 @@
 
     Reveal.addEventListener('charts', function(event) {
         setTimeout(function() {
+            $('.chart').html('<canvas id="canvas1" height="300" width="300"></canvas><canvas id="canvas2" height="300" width="300"></canvas><canvas id="canvas3" height="300" width="300"></canvas>');
+
             var doughnutData = [{
                     value: 30,
                     color: "#F7464A"
@@ -562,7 +564,7 @@
                 scaleShowLabels: false,
                 pointLabelFontSize: 10
             });
-        }, 500);
+        }, 1000);
     });
 
     Reveal.addEventListener('fragmentshown', function(event) {
